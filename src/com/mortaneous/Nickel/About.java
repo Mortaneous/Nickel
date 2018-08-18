@@ -6,8 +6,8 @@ package com.mortaneous.Nickel;
 import javax.swing.*;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import static javax.swing.GroupLayout.Alignment;
 import static javax.swing.LayoutStyle.ComponentPlacement;
 
 public class About extends JDialog
@@ -37,8 +37,12 @@ public class About extends JDialog
 		info = new JLabel(getAboutText(appName));
 		
 		closeButton = new JButton("Close");
-		closeButton.addActionListener((ActionEvent) -> { setVisible(false); });
-		}
+		//closeButton.addActionListener((ActionEvent) -> { setVisible(false); });
+		closeButton.addActionListener( new ActionListener() {
+			public void actionPerformed(ActionEvent event) {
+				setVisible(false);
+			}
+		});
 	}
 	
 	public void createLayout()
