@@ -1,7 +1,7 @@
 /*
  * About.java
  */
-package com.mortaneous.Nickel;
+package com.mortaneous.misc.Nickel;
 
 import javax.swing.*;
 import java.awt.Container;

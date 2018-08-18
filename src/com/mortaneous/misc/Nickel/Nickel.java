@@ -2,7 +2,7 @@
  * Nickel.java
  */
  
-package com.mortaneous.Nickel;
+package com.mortaneous.misc.Nickel;
 
 import java.awt.EventQueue;
 import javax.swing.JFrame;
