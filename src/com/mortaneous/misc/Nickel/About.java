@@ -37,12 +37,7 @@ public class About extends JDialog
 		info = new JLabel(getAboutText(appName));
 		
 		closeButton = new JButton("Close");
-		//closeButton.addActionListener((ActionEvent) -> { setVisible(false); });
-		closeButton.addActionListener( new ActionListener() {
-			public void actionPerformed(ActionEvent event) {
-				setVisible(false);
-			}
-		});
+		closeButton.addActionListener((ActionEvent) -> { setVisible(false); });
 	}
 	
 	public void createLayout()

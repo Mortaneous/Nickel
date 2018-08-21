@@ -11,16 +11,9 @@ public class Nickel
 {
 	public void run()
 	{
-//		EventQueue.invokeLater( () -> {
-//			JFrame gui = new NickGui();
-//			gui.setVisible(true);
-//		});
-		
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				JFrame gui = new NickGui();
-				gui.setVisible(true);
-			}
+		EventQueue.invokeLater( () -> {
+			JFrame gui = new NickGui();
+			gui.setVisible(true);
 		});
 	}
 	
